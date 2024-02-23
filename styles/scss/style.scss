@@ -8,3 +8,53 @@ header {
     color: $gray-500;
   }
 }
+
+main {
+  .card {
+    width: 250px;
+    background-color: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+  }
+
+  .card:hover {
+    transform: scaleX(1.4) scaleY(1.4);
+    z-index: 10;
+  }
+
+  .card-body {
+    display: none;
+    /* height: 0px; */
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #141414;
+    top: 120px;
+    width: 100%;
+  }
+
+  .card-icon {
+    color: #fff;
+    padding: 0px !important;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .card:hover > .card-body {
+    display: block;
+    /* height: max-content !important; */
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    visibility: hidden;
+    &:hover {
+      visibility: visible;
+    }
+  }
+}
