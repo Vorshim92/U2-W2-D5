@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   },
   "name": "u2-w2-d5",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "compile-live": "sass ./styles/scss/style.scss ./styles/css/style.css -w"
   },
