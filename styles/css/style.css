@@ -11839,5 +11839,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header .avatar {
+  width: 50px;
+}
+header i {
+  color: #adb5bd;
+}
 
 /*# sourceMappingURL=style.css.map */

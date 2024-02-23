@@ -28,13 +28,97 @@
     <!-- WEBPAGE_NAME -->
     <title>TITOLO</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- BEGIN_HEADER -->
-    <header></header>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./assets/imgs/netflix_logo.png" alt="" width="100px" /></a>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 collapse collapse-horizontal" type="search" placeholder="Search" aria-label="Search" id="collapseWidthExample" />
+              <button
+                class="btn btn-outline-secondary border border-dark"
+                type="submit"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-6 position-relative">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell rounded-circle p-3"></i></a
+              ><span class="position-absolute top-0 p-1 bg-warning border border-light rounded-circle" style="right: 20px"></span>
+              <div class="dropdown-menu dropdown-menu-end">
+                <p class="dropdown-item">Non hai nuove notifiche</p>
+              </div>
+            </div>
+            <div class="col-6 position-relative">
+              <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+                ><img class="avatar rounded-5" src="./assets/imgs/avatar.png" alt=""
+              /></a>
+              <span class="position-absolute bottom-0 p-2 bg-danger border border-light rounded-circle" style="right: 10px"></span>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- END_HEADER -->
 
     <!-- BEGIN_MAIN -->
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-2"><h2 class="text-white">TV Shows</h2></div>
+          <div class="col-2">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <button class="px-5 border border-gray bg-black text-white">Genres</button>
+              </div>
+              <div class="col-4"><span class="dropdown-toggle text-white"></span></div>
+            </div>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-2">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <i class="bi bi-list-nested border px-2 border-gray text-white"></i>
+                <i class="bi bi-grid-fill border px-2 border-gray text-white"></i>>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- END_MAIN -->
 
     <!-- BEGIN_FOOTER -->

@@ -1,1 +1,10 @@
 @import "./bootstrap_override.scss";
+
+header {
+  .avatar {
+    width: 50px;
+  }
+  i {
+    color: $gray-500;
+  }
+}
