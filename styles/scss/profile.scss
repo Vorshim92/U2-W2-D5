@@ -1,0 +1,28 @@
+@import "./bootstrap_override.scss";
+
+header {
+  .avatar {
+    width: 50px;
+  }
+  i {
+    color: $gray-500;
+  }
+}
+.btnEditProfile {
+  border: solid rgba(122, 122, 122, 0.973) 1px;
+  background-color: #212529;
+  border-color: rgba(122, 122, 122, 0.973);
+  color: rgba(122, 122, 122, 0.973);
+  padding: 6px;
+  padding-inline: 30px;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(122, 122, 122, 0.973);
+  }
+}

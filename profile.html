@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META_TAGS -->
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="DESCRIZIONE" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="LINK FONTS GOOGLE" rel="stylesheet" />
+
+    <!-- FONTAWESOME 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/css/profile.css" />
+
+    <!-- WEBPAGE_NAME -->
+    <title>TITOLO</title>
+  </head>
+  <body class="bg-dark">
+    <!-- BEGIN_HEADER -->
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/imgs/netflix_logo.png" alt="" width="100px" /></a>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0 d-none">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+            <form class="d-flex d-none" role="search">
+              <input class="form-control me-2 collapse collapse-horizontal" type="search" placeholder="Search" aria-label="Search" id="collapseWidthExample" />
+              <button
+                class="btn btn-outline-secondary border border-dark"
+                type="submit"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="row align-items-center d-none">
+            <div class="col-6 position-relative">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="bi bi-bell-fill p-3"></i></a
+              ><span class="position-absolute top-0 p-1 bg-warning border border-light rounded-circle" style="right: 20px"></span>
+              <div class="dropdown-menu dropdown-menu-end">
+                <p class="dropdown-item">Non hai nuove notifiche</p>
+              </div>
+            </div>
+            <div class="col-6 position-relative">
+              <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+                ><img class="avatar rounded-5" src="./assets/imgs/avatar.png" alt=""
+              /></a>
+              <span class="position-absolute bottom-0 p-2 bg-danger border border-light rounded-circle" style="right: 10px"></span>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END_HEADER -->
+
+    <main>
+      <div class="container-xs text-white mx-auto my-5" style="width: 50%">
+        <div class="border-bottom solid border-secondary"><h1>Edit Profile</h1></div>
+        <div class="row py-4">
+          <div class="col-2">
+            <div class="position-relative">
+              <img src="./assets/imgs/avatar.png" alt="" width="100%" class="position-relative" />
+              <i class="fas fa-pencil-alt rounded-circle bg-dark border border-white shadow p-1 position-absolute bottom-0 start-0"></i>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="row pb-4 border-bottom solid border-secondary">
+              <div class="col-12 bg-secondary py-2 mb-3">Strive Student</div>
+              <div class="col-12 text-secondary"><h4>Language:</h4></div>
+              <div class="col-12">
+                <button class="border border-gray bg-black text-white px-3">
+                  <li class="nav-item dropdown" style="list-style: none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> English </a>
+                    <ul class="dropdown-menu mycolormenudrop bg-dark">
+                      <li><a class="dropdown-item text-white" href="#">Italian</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Spanish</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Polish</a></li>
+                    </ul>
+                  </li>
+                </button>
+              </div>
+            </div>
+            <div class="row mb-4 border-bottom solid pt-4 pb-5 border-secondary">
+              <div class="col-12 text-secondary"><h4>Maturity Settings:</h4></div>
+              <div class="col-6 bg-secondary mb-2">ALL MATURITY RATINGS</div>
+              <div class="col-6"></div>
+              <div class="col-12"><p class="pb-2">Show titles of all maturity ratings for this profile</p></div>
+              <div class="col-12">
+                <a href=""><button class="btnEditProfile">EDIT</button></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="col-12 mycustomtext1"><h4>Autoplay controls</h4></div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Autoplay next episode in a series on all devices </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input bg-dark" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Autoplay previews whilte browsing on all devices </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 text-center border-top solid pt-4 pb-5 border-secondary">
+          <div class="col-4">
+            <a href="./index.html"><button class="btnEditProfile">SAVE</button></a>
+          </div>
+          <div class="col-4">
+            <a href="./index.html"><button class="btnEditProfile">CANCEL</button></a>
+          </div>
+          <div class="col-4">
+            <a href="./index.html"><button class="btnEditProfile">DELETE PROFILE</button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- BEGIN_SCRIPT -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- END_SCRIPT -->
+  </body>
+</html>
